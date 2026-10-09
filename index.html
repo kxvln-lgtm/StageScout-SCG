@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru" data-public-pages="true">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f5f5f0"><meta name="description" content="StageScout от SCG — мероприятия Астаны, проверенные источники и деловые контакты организаторов."><title>StageScout — проекты начинаются здесь</title><link rel="stylesheet" href="./style.css?v=1.0"><link rel="icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#content">К содержимому</a>
+<aside class="sidebar">
+<a class="brand" href="#radar" aria-label="StageScout — поиск проектов"><span class="brandmark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 7h16L8 25h16M8 16h16" stroke="currentColor" stroke-width="3"/></svg></span><span>StageScout<small>BY STAGE CRAFT GROUP</small></span></a>
+<div class="workspace"><span class="workspace-dot"></span><div>Астана, Казахстан<small>Проекты. Люди. Возможности.</small></div><span class="workspace-arrow">↗</span></div>
+<span class="nav-label">РАБОЧЕЕ ПРОСТРАНСТВО</span>
+<nav id="nav" aria-label="Разделы StageScout">
+<button data-view="radar"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="m12 12 7-7"/></svg><span>Поиск проектов</span><span class="nav-arrow">↗</span></button>
+<button data-view="pipeline"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="16" rx="2"/><rect x="14" y="4" width="6" height="10" rx="2"/></svg><span>Переговоры</span></button>
+<button data-view="contacts"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 5a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5"/></svg><span>Организаторы</span></button>
+<button data-view="sources"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6m-1-5-9 9M10 5H5v14h14v-5"/></svg><span>Источники</span></button>
+<button data-view="settings"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span>Профиль SCG</span></button>
+</nav>
+<div class="sidebar-foot"><div class="sidebar-note"><span class="eyebrow">ОТ ИДЕИ ДО СЦЕНЫ</span><p>Следующий проект<br>уже где-то рядом.</p><span class="sidebar-note-mark" aria-hidden="true">↗</span></div><div class="sidebar-status"><span class="dot"></span><span>Данные из открытых источников</span></div><small>STAGESCOUT · SCG / 2026</small></div>
+</aside>
+<main>
+<header><a class="mobilebrand" href="#radar"><span class="mobile-mark" aria-hidden="true">↗</span>StageScout</a><div class="crumb">SCG <span>/</span><span id="pageLabel">Поиск проектов</span></div><div class="header-right"><span class="city"><span class="dot"></span> Астана</span><a class="control-link" href="https://scg-stagescout-pilot.sa3nov.chatgpt.site/control" target="_blank" rel="noopener noreferrer">Командный центр <span aria-hidden="true">↗</span></a></div></header>
+<div id="content" tabindex="-1"></div>
+<footer><a href="#radar">StageScout<span>by SCG</span></a><span>People. Projects. Culture.</span><span>Сначала найти. Затем создать.</span></footer>
+</main>
+<dialog id="detail"><div class="modalhead"><span class="eyebrow">STAGESCOUT / КАРТОЧКА ПРОЕКТА</span><button id="closeDetail" aria-label="Закрыть карточку">×</button></div><div id="detailBody"></div></dialog>
+<dialog id="addDialog"><div class="modalhead"><span class="eyebrow">НОВЫЙ ПРОЕКТ</span><button id="closeAdd" aria-label="Закрыть">×</button></div><h2>Добавить событие</h2><p class="muted">Сохраните анонс из Instagram или с сайта организатора.</p><form id="addForm"><label>Название<input name="title" required maxlength="200"></label><div class="formrow"><label>Дата<input name="date" type="date" required></label><label>Формат<select name="category"><option>Концерт</option><option>Стендап</option><option>Фестиваль</option><option>Выставка</option><option>Форум</option><option>Конференция</option><option>Fashion</option><option>Спорт</option><option>Другое</option></select></label></div><label>Ссылка на анонс<input name="source" type="url" placeholder="https://…" required></label><label>Организатор<input name="organizer" maxlength="150"></label><div class="formrow"><label>Email<input type="email" name="email"></label><label>Телефон<input type="tel" name="phone" placeholder="+7…" pattern="\+?[0-9 ()-]{7,25}"></label></div><label>Источник контакта<input type="url" name="contactSource" placeholder="Ссылка на страницу с контактами"></label><button class="primary" type="submit">Сохранить проект ↗</button></form></dialog>
+<div id="toast" role="status" aria-live="polite"></div><input type="file" id="importFile" accept="application/json" hidden><script type="module" src="./app.js?v=1.0"></script>
+</body></html>
